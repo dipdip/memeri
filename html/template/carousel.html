@@ -1,0 +1,15 @@
+<div class="carousel-inner">
+    {{#images}}
+    <div class="item">
+        <img src="{{{fileName}}}"></img>
+        <div class="carousel-caption">
+            <p>
+                {{description}}
+            </p>
+        </div>
+    </div>
+    {{/images}}
+</div>
+<!-- Carousel nav -->
+<a class="carousel-control left" href="#{{carouselName}}" data-slide="prev">&lsaquo;</a>
+<a class="carousel-control right" href="#{{carouselName}}" data-slide="next">&rsaquo;</a>
