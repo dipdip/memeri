@@ -7,9 +7,11 @@ require.config({
         text : '../3p/text',
         // Our js
         carousel : '../src/carousel',
+        navbar: '../src/navbar',
         dataProxy: '../src/dataProxy',
         // Templates
-        carouselTemplate: '../../html/template/carousel.html'
+        carouselTemplate: '../../html/template/carousel.html',
+        navbarTemplate: '../../html/template/navbar.html'
     },
     shim : {
         'bootstrap' : {
