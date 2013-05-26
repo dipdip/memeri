@@ -2,16 +2,16 @@
     "images": [
         {
             "fileName": "image/Olymplanets2S.jpg",
-            "description": "Olymplanets [toasted]"
+            "description": "Olymplanets [t]"
         }, {
             "fileName": "image/Peekaboo2S.jpg",
-            "description": "Peekaboo [toasted]"
+            "description": "Peekaboo [t]"
         }, {
             "fileName": "image/shell-shock2S.jpg",
-            "description": "Shell-Shock [toasted]"
+            "description": "Shell-Shock [t]"
         }, {
             "fileName": "image/Falling in time2S.jpg",
-            "description": "Shell-Shock [toasted]"
+            "description": "Shell-Shock [t]"
         }
     ]
 }
