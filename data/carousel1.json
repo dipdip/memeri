@@ -2,43 +2,40 @@
     "images": [
         {
             "fileName": "image/alwayshereSmall.jpg",
-            "description": "diu"
+            "description": "Always Here"
         }, {
             "fileName": "image/whatsoutthere2Small.jpg",
-            "description": "lai"
+            "description": "Whats Out There?"
         }, {
             "fileName": "image/Falling in timeS.jpg",
-            "description": "jo"
+            "description": "Falling In Time"
         }, {
             "fileName": "image/bahhd3S.jpg",
-            "description": "jone"
+            "description": "Bahhd"
         }, {
             "fileName": "image/jumpingoutS.jpg",
-            "description": "hum"
+            "description": "Jumping Out"
         }, {
             "fileName": "image/MakiEclipseS.jpg",
-            "description": "ga"
-        }, {
-            "fileName": "image/Olymplanets2S.jpg",
-            "description": "fu"
+            "description": "Maki Eclipse"
         }, {
             "fileName": "image/OlymplanetsS.jpg",
-            "description": "gwai"
+            "description": "Olymplanets"
         }, {
             "fileName": "image/PeekabooS.jpg",
-            "description": "sik"
-        }, {
-            "fileName": "image/Peekaboo2S.jpg",
-            "description": "see"
-        }, {
-            "fileName": "image/Peekaboo3S.jpg",
-            "description": "fut"
+            "description": "Peekaboo"
         }, {
             "fileName": "image/squirtS.jpg",
-            "description": "lone"
+            "description": "Squirt"
         }, {
             "fileName": "image/Snooze2S.jpg",
-            "description": "mo"
+            "description": "Snooze"
+        }, {
+            "fileName": "image/whichwayS.jpg",
+            "description": "Which Way"
+        }, {
+            "fileName": "image/shell-shockS.jpg",
+            "description": "Shell-Shock"
         }
     ]
 }

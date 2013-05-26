@@ -1,44 +1,8 @@
 {
     "images": [
         {
-            "fileName": "image/alwayshereSmall.jpg",
-            "description": "diu"
-        }, {
-            "fileName": "image/whatsoutthere2Small.jpg",
-            "description": "lai"
-        }, {
-            "fileName": "image/Falling in timeS.jpg",
-            "description": "jo"
-        }, {
-            "fileName": "image/bahhd3S.jpg",
-            "description": "jone"
-        }, {
-            "fileName": "image/jumpingoutS.jpg",
-            "description": "hum"
-        }, {
-            "fileName": "image/MakiEclipseS.jpg",
-            "description": "ga"
-        }, {
-            "fileName": "image/Olymplanets2S.jpg",
-            "description": "fu"
-        }, {
-            "fileName": "image/OlymplanetsS.jpg",
-            "description": "gwai"
-        }, {
-            "fileName": "image/PeekabooS.jpg",
-            "description": "sik"
-        }, {
-            "fileName": "image/Peekaboo2S.jpg",
-            "description": "see"
-        }, {
             "fileName": "image/Peekaboo3S.jpg",
-            "description": "fut"
-        }, {
-            "fileName": "image/squirtS.jpg",
-            "description": "lone"
-        }, {
-            "fileName": "image/Snooze2S.jpg",
-            "description": "mo"
+            "description": "Peekaboo [beta'ed]"
         }
     ]
 }
