@@ -1,4 +1,4 @@
-define(["jquery", "mustache", "text!navbarTemplate"], function($, Mustache, navbarTemplate) {
+define(["jquery", "bootstrap", "mustache", "text!navbarTemplate"], function($, Bootstrap, Mustache, navbarTemplate) {
     addNavBar = function(activePageName) {
         var data = {
             "pages" : [{
@@ -14,6 +14,7 @@ define(["jquery", "mustache", "text!navbarTemplate"], function($, Mustache, navb
             var title = data.pages[i].title.toLowerCase();
             if (title == activePageName.toLowerCase()){
                 data.pages[i].active =  true;
+                break;
             }
         }
         var output = Mustache.to_html(navbarTemplate, data);    

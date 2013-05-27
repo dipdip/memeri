@@ -1,9 +1,6 @@
 define(["jquery", "bootstrap", "mustache", "navbar", "dataProxy", "text!carouselTemplate"], function($, bootstrap, Mustache, navbar, dataProxy, carouselTemplate) {
     show = function() {
 
-        // Render navbar
-        navbar.addNavBar("Welcome");
-        
         var options = {
             async : false,
             method : "GET"
