@@ -9,9 +9,15 @@ define(["jquery", "bootstrap", "mustache", "navbar", "dataProxy", "text!carousel
         var carousels = ['homeCarousel1', 'homeCarousel2', 'homeCarousel3'];
 
         for (var i = 0; i < carousels.length; i++) {
-            fileIndex = i + 1;
+            var fileIndex = i + 1;
             dataProxy.getData('data/carousel' + fileIndex + '.json', options, function(data) {
                 data.carouselName = carousels[i];
+
+                //Add id to each item
+                for (var j = 0; j < data.images.length; j++) {
+                    data.images[j].id = fileIndex.toString() + j;
+                }
+
                 var output = Mustache.to_html(carouselTemplate, data);
                 $("#" + carousels[i]).html(output);
                 // make the first one active
@@ -19,7 +25,7 @@ define(["jquery", "bootstrap", "mustache", "navbar", "dataProxy", "text!carousel
                 // Generate indicator
                 for (var j = 0; j < data.images.length; j++) {
                     $("#" + carousels[i] + " .carousel-indicators").append('<li data-target="#' + carousels[i] + '" data-slide-to="' + j + '"></li>');
-                    if (j == 0){
+                    if (j == 0) {
                         $("#" + carousels[i] + " .carousel-indicators li").first().addClass("active");
                     }
                 }
