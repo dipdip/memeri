@@ -8,6 +8,10 @@ define(["jquery", "bootstrap", "mustache", "text!navbarTemplate"], function($, B
             {
                 "url": "hello.html",
                 "title": "Hello"
+            },
+            {
+                "url": "ideas.html",
+                "title": "Ideas"
             }]
         };
         for (var i = 0; i < data.pages.length; i++){
