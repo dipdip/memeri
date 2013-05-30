@@ -6,7 +6,7 @@ define(["jquery", "bootstrap", "mustache", "navbar", "dataProxy", "text!carousel
             method : "GET"
         };
 
-        var carousels = ['homeCarousel1', 'homeCarousel2', 'homeCarousel3'];
+        var carousels = ['homeCarousel1', 'homeCarousel2', 'homeCarousel3', 'ideasCarousel1'];
 
         for (var i = 0; i < carousels.length; i++) {
             var fileIndex = i + 1;
@@ -32,7 +32,7 @@ define(["jquery", "bootstrap", "mustache", "navbar", "dataProxy", "text!carousel
                 // Make it a carousel and move every 3s
                 $(document).ready(function() {
                     $("#" + carousels[i]).carousel({
-                        interval : 3000
+                        interval : 4000
                     });
                 });
             });
