@@ -1,5 +1,7 @@
 require(["main"], function(common) {
-    require(["navbar"], function(navbar) {
+    require(["carousel", "navbar"], function(carousel, navbar) {
+        // Render navbar
         navbar.addNavBar("ideas");
+        return carousel.show();
     });
 });
