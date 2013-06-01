@@ -1,16 +1,14 @@
 define(["jquery", "bootstrap", "mustache", "navbar", "dataProxy", "text!carouselTemplate"], function($, bootstrap, Mustache, navbar, dataProxy, carouselTemplate) {
-    show = function() {
+    show = function(carousels) {
 
         var options = {
             async : false,
             method : "GET"
         };
 
-        var carousels = ['homeCarousel1', 'homeCarousel2', 'homeCarousel3', 'ideasCarousel1'];
-
         for (var i = 0; i < carousels.length; i++) {
             var fileIndex = i + 1;
-            dataProxy.getData('data/carousel' + fileIndex + '.json', options, function(data) {
+            dataProxy.getData('data/' + carousels[i] + '.json', options, function(data) {
                 data.carouselName = carousels[i];
 
                 //Add id to each item
