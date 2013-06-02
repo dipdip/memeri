@@ -58,25 +58,34 @@
                         <p>
                             Share your memeri with someone
                         </p>
-                        <form action="postcard.html">
+                        <legend>
+
+                        </legend>
+                        <label>Chosen Postcard:</label>
+                        <ul class ="thumbnails">
+                            <li class="span4">
+                                <img id="selected-postcard" class="thumbnail" src="image/Peekaboo2S.jpg">
+                            </li>
+                        </ul>
+                        <form id="postcard-form" action="postcard.html">
                             <fieldset>
-                                <legend>
-                                        
-                                </legend>
+                                <input type="hidden" name="img" id="hidden-img-postcard" value="image/Peekaboo2S.jpg">
+
                                 <label>Your Name:</label>
-                                <input type="text" class="span12" name="sName" placeholder="Name" required>
+                                <input type="text" class="span12" name="sName" id="sName" placeholder="Name" required>
                                 <label>Your Email:</label>
-                                <input type="email" class="span12" name="sEmail" placeholder="me@memeri.com" required>
+                                <input type="email" class="span12" name="sEmail" id="sEmail" placeholder="me@memeri.com" required>
                                 <label>Recipient's Name:</label>
-                                <input type="text" class="span12" name="rName" placeholder="Name" required>
+                                <input type="text" class="span12" name="rName" id="rName" placeholder="Name" required>
                                 <label>Recipient's Email:</label>
-                                <input type="email" class="span12" name="rEmail" placeholder="recipient@memeri.com" required>
+                                <input type="email" class="span12" name="rEmail" id="rEmail" placeholder="recipient@memeri.com" required>
                                 <label>Message (max 100 characters)</label>
-                                <textarea rows="5" class="span12" name="msg" placeholder="Your personalized message" required></textarea>                                                                
+                                <textarea rows="5" class="span12" name="msg" id="msg" placeholder="Your personalized message" required></textarea>                                                                                                                                                                                                
                                 <label </label>
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" id='postcard-submit'>
                                     Submit
                                 </button>
+
                             </fieldset>
                         </form>
                     </div>

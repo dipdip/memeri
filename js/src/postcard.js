@@ -3,7 +3,7 @@ require(["main"], function(common) {
         var params = utils.getUrlQueryParams();
         // Render navbar
         navbar.addNavBar("postcard");
-        if (!params.rName){
+        if (!params.rName) {
             params.rName = "Visitor";
             params.sName = "Memeri";
             params.msg = "Thanks for visiting."
@@ -11,13 +11,16 @@ require(["main"], function(common) {
         var text = "<h2>Hello {{rName}},</h2><p>This is a message from {{sName}}.  {{msg}}</p>"
         var output = Mustache.to_html(text, params);
 
+        $('#postcard-img').attr('src', params.img);
         $('#postcard-msg').html(output);
 
-        // Makes the wells the same height
-        boxes = $('.well');
-        maxHeight = Math.max.apply(Math, boxes.map(function() {
-            return $(this).height();
-        }).get());
-        boxes.height(maxHeight);
+        $(document).ready(function() {
+            // Makes the wells the same height
+            boxes = $('.well');
+            maxHeight = Math.max.apply(Math, boxes.map(function() {
+                return $(this).height();
+            }).get());
+            boxes.height(maxHeight);
+        });
     });
 });
