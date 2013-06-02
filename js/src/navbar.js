@@ -12,6 +12,10 @@ define(["jquery", "bootstrap", "mustache", "text!navbarTemplate"], function($, B
             {
                 "url": "ideas.html",
                 "title": "Ideas"
+            },
+            {
+                "url": "createPostcard.html",
+                "title": "Postcard"
             }]
         };
         for (var i = 0; i < data.pages.length; i++){

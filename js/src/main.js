@@ -9,6 +9,7 @@ require.config({
         carousel : '../src/carousel',
         navbar: '../src/navbar',
         dataProxy: '../src/dataProxy',
+        utils: '../src/utils',
         // Templates
         carouselTemplate: '../../html/template/carousel.html',
         navbarTemplate: '../../html/template/navbar.html'
