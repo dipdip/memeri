@@ -1,7 +1,27 @@
 body {
-  padding-top: 60px;
-  padding-bottom: 40px;
+	padding-top:60px;
+	padding-bottom:40px;
 }
 textarea {
-  resize: none;
+	resize:none;
+}
+#postcard .postcard-content {
+	position:relative;
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+#postcard-captions {
+	display:none;
+	position:absolute;//
+	padding-left:10px;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.4);
+	width:100%;
+	height:100%;
+	color:#fff !important;
+}
+#postcard-inside {
+	padding-left:20px;
+	padding-right:20px;
 }
