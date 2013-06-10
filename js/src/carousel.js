@@ -30,7 +30,7 @@ define(["jquery", "bootstrap", "mustache", "navbar", "dataProxy", "text!carousel
                 // Make it a carousel and move every 3s
                 $(document).ready(function() {
                     $("#" + carousels[i]).carousel({
-                        interval : 4000
+                        interval : 7000
                     });
                 });
             });
