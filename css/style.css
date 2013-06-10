@@ -1,5 +1,8 @@
 body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background: #CCC;
+	padding-top:60px;
+	padding-bottom:40px;
+	background:#FFFFCD;
+}
+#index h2 {
+	color:#003299;
 }
