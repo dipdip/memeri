@@ -15,39 +15,51 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span8">
+                    <h3>Postcards</h3>
                     <div class="row-fluid">
                         <ul class="thumbnails">
                             <li class="span4">
-                                <a href="#" class="thumbnail"> <img src="image/Peekaboo2S.jpg" alt=""> </a>
+                                <a href="#" class="thumbnail thumbnail-postcard"> <img src="image/Peekaboo2S.jpg" alt=""> </a>
                             </li>
                             <li class="span4">
-                                <a href="#" class="thumbnail"> <img src="image/scoop2S.jpg" alt=""> </a>
+                                <a href="#" class="thumbnail thumbnail-postcard"> <img src="image/scoop2S.jpg" alt=""> </a>
                             </li>
                             <li class="span4">
-                                <a href="#" class="thumbnail"> <img src="image/shell-shock2S.jpg" alt=""> </a>
+                                <a href="#" class="thumbnail thumbnail-postcard"> <img src="image/shell-shock2S.jpg" alt=""> </a>
                             </li>
                         </ul>
                     </div>
                     <div class="row-fluid">
                         <ul class="thumbnails">
                             <li class="span4">
-                                <a href="#" class="thumbnail"> <img src="image/Snooze2S.jpg" alt=""> </a>
+                                <a href="#" class="thumbnail thumbnail-postcard"> <img src="image/Snooze2S.jpg" alt=""> </a>
                             </li>
                             <li class="span4">
-                                <a href="#" class="thumbnail"> <img src="image/Falling in time2S.jpg" alt=""> </a>
+                                <a href="#" class="thumbnail thumbnail-postcard"> <img src="image/Falling in time2S.jpg" alt=""> </a>
                             </li>
                             <li class="span4">
-                                <a href="#" class="thumbnail"> <img src="image/BloomS.jpg" alt=""> </a>
+                                <a href="#" class="thumbnail thumbnail-postcard"> <img src="image/BloomS.jpg" alt=""> </a>
                             </li>
                         </ul>
                     </div>
                     <div class = "row-fluid">
                         <ul class ="thumbnails">
                             <li class="span4">
-                                <a href="#" class="thumbnail"> <img src="image/MakiEclipseS.jpg" alt=""> </a>
+                                <a href="#" class="thumbnail thumbnail-postcard"> <img src="image/MakiEclipseS.jpg" alt=""> </a>
                             </li>
                             <li class="span4">
-                                <a href="#" class="thumbnail"> <img src="image/Northpole2S.jpg" alt=""> </a>
+                                <a href="#" class="thumbnail thumbnail-postcard"> <img src="image/Northpole2S.jpg" alt=""> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3>Stamps</h3>
+                    <div class="row-fluid">
+                        <ul class="thumbnails">
+                            <li class="span3">
+                                <a href="#" class="thumbnail thumbnail-stamp"> <img src="image/stamp2.png" alt=""> </a>
+                            </li>
+                            <li class="span3">
+                                <a href="#" class="thumbnail thumbnail-stamp"> <img src="image/stampToast.png" alt=""> </a>
                             </li>
                         </ul>
                     </div>
@@ -61,15 +73,23 @@
                         <legend>
 
                         </legend>
-                        <label>Chosen Postcard:</label>
-                        <ul class ="thumbnails">
-                            <li class="span5">
-                                <img id="selected-postcard" class="thumbnail" src="image/Peekaboo2S.jpg">
-                            </li>
-                        </ul>
+                        <label>Chosen Postcard and Stamp:</label>
+                        <div class="row-fluid">
+                            <ul class ="thumbnails">
+                                <li class="span5">
+                                    <img id="selected-postcard" class="thumbnail" src="image/Peekaboo2S.jpg">
+                                </li>
+                                <li>
+                                </li>
+                                <li class="span5">
+                                    <img id="selected-stamp" class="thumbnail" src="image/stamp2.png">
+                                </li>
+                            </ul>
+                        </div>
                         <form id="postcard-form" action="postcard.html">
                             <fieldset>
                                 <input type="hidden" name="img" id="hidden-img-postcard" value="image/Peekaboo2S.jpg">
+                                <input type="hidden" name="img" id="hidden-img-stamp" value="image/stamp2.png">
 
                                 <label>Your Name:</label>
                                 <input type="text" class="span12" name="sName" id="sName" placeholder="Name" required>
@@ -80,11 +100,13 @@
                                 <label>Recipient's Email:</label>
                                 <input type="email" class="span12" name="rEmail" id="rEmail" placeholder="recipient@memeri.com" required>
                                 <label>Message (max 250 characters)</label>
-                                <textarea rows="5" class="span12" name="msg" id="msg" placeholder="Your personalized message" maxlength="250" required></textarea>                                                                                                                                                                                                                                
+                                <textarea rows="5" class="span12" name="msg" id="msg" placeholder="Your personalized message" maxlength="250" required></textarea>                                                                                                                                                                                                                                                                                                
                                 <label </label>
                                 <button type="submit" class="btn btn-primary" id='postcard-submit'>
                                     Submit
                                 </button>
+
+
 
 
                             </fieldset>

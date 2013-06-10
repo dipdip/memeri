@@ -4,12 +4,19 @@ require(["main"], function(common) {
         navbar.addNavBar("postcard");
 
         $(document).ready(function() {
-            $(".thumbnail").click(function(e) {
+            $(".thumbnail-postcard").click(function(e) {
                 var src = $(this).children("img").attr("src");
                 // Change the selected postcard image
                 $("#selected-postcard").attr("src", src);
                 // Change the hidden element img src
                 $("#hidden-img-postcard").attr("value", src);
+            });
+            $(".thumbnail-stamp").click(function(e) {
+                var src = $(this).children("img").attr("src");
+                // Change the selected postcard image
+                $("#selected-stamp").attr("src", src);
+                // Change the hidden element img src
+                $("#hidden-img-stamp").attr("value", src);
             });
 
             $("#postcard-form").submit(function(e) {
@@ -18,12 +25,13 @@ require(["main"], function(common) {
                 // Rewrite our own query params
                 $this = $(this);
                 var img = $("#hidden-img-postcard").val();
+                var stamp = $("#hidden-img-stamp").val();
                 var sName = $("#sName").val();
                 var rName = $("#rName").val();
                 var sEmail = $("#sEmail").val();
                 var rEmail = $("#rEmail").val();
                 var msg = $("#msg").val();
-                var query = "img=" + img + "&sName=" + sName + "&sEmail=" + sEmail + "&rName=" + rName + "&rEmail=" + rEmail + "&msg=" + msg;
+                var query = "img=" + img + "&stamp=" + stamp + "&sName=" + sName + "&sEmail=" + sEmail + "&rName=" + rName + "&rEmail=" + rEmail + "&msg=" + msg;
                 query = window.btoa(query);
                 window.location.href = $this.attr("action") + "?" + query;
             });
