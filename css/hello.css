@@ -35,26 +35,28 @@ textarea {
 #postcard-msg{
     padding-top: 20px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 #stamp{
     padding-top: 20px;
-    width: 250px;
-    padding-left: 70px;
 }
 
 #poem{
-    font-size: 20px;
-    font-weight: none;
-    line-height: 28px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 32px;
     padding-top: 60px;
-    padding-left: 70px;
-    font-family:cursive;
+    padding-left: 40px;
+    font-family: cursive;
     width: 100%;
     color: darkgreen;
 }
 #postcard-right{
     margin: 0px;
+    border-left: dotted;
+    border-width: thin;
+    height: 100%;
 }
 
 .align-right {
