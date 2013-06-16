@@ -9,7 +9,7 @@ require(["main"], function(common) {
             params.msg = "Thanks for visiting."
         }
 
-        mapping = {
+        var mapping = {
             "image/Peekaboo2S.jpg" : {
                 "name" : "Peekaboo",
                 "poem" : "I see you<br>Do you see me too?<br><p class='align-right'>~Toast</p>"
