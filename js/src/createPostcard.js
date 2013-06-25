@@ -4,6 +4,9 @@ require(["main"], function(common) {
         navbar.addNavBar("postcard");
 
         $(document).ready(function() {
+            
+            // Set default postcard img
+            $("#selected-postcard").attr("src", 'image/Peekaboo2S.jpg');
 
             $(".thumbnail-postcard").click(function(e) {
                 var src = $(this).children("img").attr("src");
@@ -17,7 +20,7 @@ require(["main"], function(common) {
             });
             $(".thumbnail-stamp").click(function(e) {
                 var src = $(this).children("img").attr("src");
-                // Change the selected postcard image
+                // Change the selected stamp image
                 $("#selected-stamp").attr("src", src);
                 // Change the hidden element img src
                 $("#hidden-img-stamp").attr("value", src);
