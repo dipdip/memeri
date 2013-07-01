@@ -15,7 +15,7 @@ define(["jquery", "bootstrap", "mustache", "text!navbarTemplate"], function($, B
             },
 			{
                 "url": "toast.html",
-                "title": "ideas"
+                "title": "toast"
             },
             {
                 "url": "createPostcard.html",
