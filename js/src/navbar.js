@@ -2,20 +2,24 @@ define(["jquery", "bootstrap", "mustache", "text!navbarTemplate"], function($, B
     addNavBar = function(activePageName) {
         var data = {
             "pages" : [{
-                "url" : "index.html",
-                "title" : "Welcome"
-            },
-            {
-                "url": "hello.html",
-                "title": "Hello"
-            },
+                "url" : "planets.html",
+                "title" : "planets"
+            },            
             {
                 "url": "ideas.html",
-                "title": "Ideas"
+                "title": "ideas"
+            },
+			{
+                "url": "hello.html",
+                "title": "hello"
+            },
+			{
+                "url": "toast.html",
+                "title": "ideas"
             },
             {
                 "url": "createPostcard.html",
-                "title": "Postcard"
+                "title": "postcard"
             }]
         };
         for (var i = 0; i < data.pages.length; i++){
