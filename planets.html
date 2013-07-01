@@ -10,48 +10,53 @@
         <link rel="stylesheet" href="css/3p/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="css/style.css"/>
         <script data-main="js/src/home" src="js/3p/require.js"></script>
-
+		<script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
     </head>
+    
     <body id="index" bgcolor="#000066">
-        <div class="container">
-             <div class="well well-small" >
-                    <p>                                              
-                        Despite their massive size, Planets are part of a larger picture.  
-                        Here at memeri, we express creative ways of aligning these cosmic wonders.
-                        Our perspective of the universe is more understandable, when we throw away our preconceptions.                        
-                        <br>
-                        <br>
-                        We hope you enjoy these pieces and have a nice day!
-                    </p>                    
-            </div>            
-
-            <div class="row">
-                <div class = "span4">
-                	<div class="well well-small">
-	                    <div id="homeCarousel1" class="carousel slide"></div>
-                    </div>
-                </div>
-                <div class = "span4">
-                   	<div class="well well-small">
-	                    <div id="homeCarousel2" class="carousel slide"></div>
-                	</div>    
-                </div>
-                <div class = "span4">
-                    <div class="well well-small">
-	                    <div id="homeCarousel3" class="carousel slide"></div>
-                    </div>
-                </div>
-            </div>
+	    <div class="container">  
+            <div id="content"> 
+				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">  
+					<li class="active"><a href="#original" data-toggle="tab">original</a></li>   
+					<li><a href="#toasted" data-toggle="tab">toasted</a></li>  
+					<li><a href="#baked" data-toggle="tab">baked</a></li>   
+				</ul>  
+          
+            <div id="my-tab-content" class="tab-content">
+		        <div class="tab-pane active" id="original">
+		            <div class = "span8">
+        	        	<div class="well">
+	        	            <div id="homeCarousel1" class="carousel slide"></div>
+    	                </div>
+	                </div>
+		        </div>
+                <div class="tab-pane" id="toasted">
+	        		<div class = "span8">
+    	               	<div class="well well-small">
+	    	                <div id="homeCarousel2" class="carousel slide"></div>
+            	    	</div>    
+                	</div>
+                </div>    
+        		<div class="tab-pane" id="baked">
+		            <div class = "span8">
+	                    <div class="well well-small">
+		                    <div id="homeCarousel3" class="carousel slide"></div>
+        	            </div>
+            	    </div>
+		        </div>
+		    </div>
+        	   
+            <script type="text/javascript">
+		    	jQuery(document).ready(function ($) {
+		        $('#tabs').tab();
+			    });
+			</script> 
            
-            <div class="row">
-                <div class="span12 offset2">
-                    <img src="./image/guess1.png"/>
-                </div>
-            </div>
             <hr>
             <footer>
                 <p>
-                    By <a href="http://memeri.com">D</a>
+                    By <a href="http://memeri.com">memeri team</a>
                 </p>
             </footer>
 
