@@ -1,4 +1,4 @@
-define(["jquery", "bootstrap", "mustache", "text!navbarTemplate"], function($, Bootstrap, Mustache, navbarTemplate) {
+define(["jquery", "mustache", "text!navbarTemplate"], function($, Mustache, navbarTemplate) {
     addNavBar = function(activePageName) {
         var data = {
             "pages" : [{

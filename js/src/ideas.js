@@ -1,5 +1,5 @@
 require(["main"], function(common) {
-    require(["jquery", "carousel", "navbar"], function($, carousel, navbar) {
+    require(["jquery", "navbar","carousel"], function($, navbar, carousel) {
         // Render navbar
         navbar.addNavBar("ideas");
         
