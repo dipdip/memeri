@@ -1,13 +1,37 @@
 body {
-	padding-top:60px;
-	padding-bottom:40px;
-	background:transparent;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: transparent;
 }
 #index h2 {
-	color:#003299;
+    color: #003299;
 }
 
 .index-icon {
-margin-left:25px;
-margin-right:25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#index {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    height: 100%;
+}
+
+.center-row {
+    display: table;
+    position: relative;
+    top: 35%;
+    margin: 0 auto;
+}
+
+.index-line {
+    width: 50%;
+    position: relative;
+    display : table;
+    margin: 0 auto;
 }
