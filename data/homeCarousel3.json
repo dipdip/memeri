@@ -7,6 +7,9 @@
 		{
             "fileName": "image/BloomS.jpg",
             "description": "Bloom [baked]"
+        }, {
+            "fileName": "image/shell-shockS.jpg",
+            "description": "Shell-Shock [baked]"
         }
     ]
 }
