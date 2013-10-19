@@ -20,7 +20,8 @@ define(["jquery", "mustache", "bootstrap", "text!navbarTemplate"], function($, M
             {
                 "url": "createPostcard.html",
                 "title": "postcard"
-            }]
+            }
+            ]
         };
         for (var i = 0; i < data.pages.length; i++){
             var title = data.pages[i].title.toLowerCase();

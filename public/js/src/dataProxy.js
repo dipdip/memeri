@@ -1,13 +1,13 @@
 define(["jquery"], function($) {
     var getData;
-    getData = function(sourceURL, options, callback) {
+    getData = function(url, options, callback) {
         if (options.params) {
             options.params = JSON.stringify(options.params)
         }
         return $.ajax({
             type : options.method,
-            url : sourceURL,
-            async : options.async,
+            url : url,
+            async : true,
             data : options.params,
             dataType : "json",
             contentType : "application/json",

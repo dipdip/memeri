@@ -1,0 +1,12 @@
+{
+  "name": "memeri",
+  "description": "ideas and art",
+  "version": "0.0.1",
+  "author": "ddandtoast",
+  "dependencies": {
+    "express": "3.x",
+    "aws-sdk": "latest",
+    "mustache": "0.7.2",
+    "simple-recaptcha": "0.0.3"
+  }
+}

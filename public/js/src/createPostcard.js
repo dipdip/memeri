@@ -1,5 +1,5 @@
 require(["main"], function(common) {
-    require(["navbar", "bootstrap", "jquery", "mustache"], function(navbar, Bootstrap, $, Mustache) {
+    require(["navbar", "bootstrap", "jquery", "mustache", "dataProxy"], function(navbar, Bootstrap, $, Mustache, dataProxy) {
         // Render navbar
         navbar.addNavBar("postcard");
         $(document).ready(function() {
@@ -32,16 +32,28 @@ require(["main"], function(common) {
                 e.preventDefault();
                 // Rewrite our own query params
                 $this = $(this);
-                var img = $("#hidden-img-postcard").val();
-                var stamp = $("#hidden-img-stamp").val();
-                var sName = $("#sName").val();
-                var rName = $("#rName").val();
-                var sEmail = $("#sEmail").val();
-                var rEmail = $("#rEmail").val();
-                var msg = $("#msg").val();
-                var query = "img=" + img + "&stamp=" + stamp + "&sName=" + sName + "&sEmail=" + sEmail + "&rName=" + rName + "&rEmail=" + rEmail + "&msg=" + msg;
-                query = window.btoa(query);
-                window.location.href = $this.attr("action") + "?" + query;
+                var data = $(this).serializeArray();
+                var params = {};
+                for (var i = 0; i < data.length; i++) {
+                    params[data[i].name] = data[i].value;
+                }
+
+                var query = "img=" + params.img + "&stamp=" + params.stamp + "&sName=" + params.senderName + "&sEmail=" + params.senderEmail + 
+                "&rName=" + params.recipientName + "&rEmail=" + params.recipientEmail + "&msg=" + params.msg;
+
+                params['query'] = window.btoa(query);
+
+                var options = {
+                    "method" : "POST",
+                    'params' : params
+                }
+                dataProxy.getData("/createPostcard", options, function(data) {
+                    console.log(data);
+                    if (!data.error)
+                        window.location.href="/thanksPostcard.html";
+                    else
+                        alert("Invalid captcha.  Please try again")
+                });
             });
 
             $("[rel='tooltip']").tooltip();

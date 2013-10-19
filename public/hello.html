@@ -28,25 +28,39 @@
                             Memeri Planets are available on a variety of media and dimensions.
                             Please contact us for more details: memeri.team@gmail.com.
                         </p>
-                        <!--form action="php/hello.php" method="post">
+                        <script type="text/javascript">
+                            var RecaptchaOptions = {
+                                theme : 'white'
+                            };
+                        </script>
+                        <form id="hello-form" action="">
                             <fieldset>
                                 <legend>
                                     Write to us
                                 </legend>
                                 <label>Name:</label>
-                                <input type="text" class="span4" name="userName" placeholder="Name" required>
+                                <input type="text" class="span4" name="senderName" placeholder="Name" required>
                                 <label>Email:</label>
-                                <input type="email" class="span4" name="userEmail" placeholder="user@memeri.com" required>
+                                <input type="email" class="span4" name="senderEmail" placeholder="user@memeri.com" required>
                                 <label>Questions or Comments:</label>
-                                <textarea rows="5" class="span4" name="userComments" placeholder="We love to hear from you!" required></textarea>                                                                
+                                <textarea rows="5" class="span4" name="comments" placeholder="We love to hear from you!" required></textarea>                                                                                                                                
                                 <label </label>
-
+<script type="text/javascript"
+       src="http://www.google.com/recaptcha/api/challenge?k=6LeD9-gSAAAAADDKMpyh44yvQtv-a1UKzaJBLGcO"></script>
+    <noscript>
+       <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LeD9-gSAAAAADDKMpyh44yvQtv-a1UKzaJBLGcO"
+           height="300" width="500" frameborder="0"></iframe><br>
+       <textarea class="span12" name="recaptcha_challenge_field" rows="3" cols="40">
+       </textarea>
+ <input type="hidden" class="span12" name="recaptcha_response_field"
+                                value="manual_challenge">
+                                </noscript>
 
                                 <button type="submit" class="btn btn-primary">
                                     Submit
                                 </button>
                             </fieldset>
-                        </form-->
+                        </form>
                     </div>
                 </div>
             </div>
@@ -60,4 +74,21 @@
         </div>
         <!-- /container -->
     </body>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] ||
+            function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-43091608-1', 'memeri.com');
+        ga('send', 'pageview');
+
+    </script>
 </html>
