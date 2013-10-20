@@ -7,7 +7,7 @@ define(["jquery"], function($) {
         return $.ajax({
             type : options.method,
             url : url,
-            async : true,
+            async : options.async,
             data : options.params,
             dataType : "json",
             contentType : "application/json",
