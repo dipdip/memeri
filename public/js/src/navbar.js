@@ -20,6 +20,10 @@ define(["jquery", "mustache", "bootstrap", "text!navbarTemplate"], function($, M
             {
                 "url": "createPostcard.html",
                 "title": "postcard"
+            },
+            {
+                "url" : "one.html",
+                "title": "one"
             }
             ]
         };
