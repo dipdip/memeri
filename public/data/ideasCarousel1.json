@@ -1,8 +1,44 @@
 {
     "images": [
         {
-            "fileName": "image/Peekaboo3S.jpg",
-            "description": "Peekaboo [burnt]"
+            "fileName": "../AOK Comic/ka1.jpg",
+            "description": "Ripple Effect"
+        },
+        {
+            "fileName": "../AOK Comic/ka2.jpg",
+            "description": "Yields"
+        },
+        {
+            "fileName": "../AOK Comic/ka3.jpg",
+            "description": "Loose change"
+        },
+        {
+            "fileName": "../AOK Comic/ka4.jpg",
+            "description": "Money for the family"
+        },
+        {
+            "fileName": "../AOK Comic/ka5.jpg",
+            "description": "Savior"
+        },
+        {
+            "fileName": "../AOK Comic/ka6.jpg",
+            "description": "Human's best friend"
+        },
+        {
+            "fileName": "../AOK Comic/ka7.jpg",
+            "description": "My toy"
+        },
+        {
+            "fileName": "../AOK Comic/ka8.jpg",
+            "description": "Oh goodies"
+        },
+        {
+            "fileName": "../AOK Comic/ka9.jpg",
+            "description": "With regrets"
+        },
+        {
+            "fileName": "../AOK Comic/ka10.jpg",
+            "description": "Welcome home"
         }
     ]
 }
