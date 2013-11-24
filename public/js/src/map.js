@@ -1,6 +1,5 @@
 require(["main"], function(common) {
     require(["navbar"], function(navbar) {
-        navbar.addNavBar("one");
-
+        //navbar.addNavBar("one");
     });
 });
