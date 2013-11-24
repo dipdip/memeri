@@ -2,12 +2,18 @@
 <div class="carousel-inner">
     {{#images}}
     <div class="item">
-        <a href="#myModal{{id}}" data-toggle="modal"><img src="{{{fileName}}}"></img></a>
+        {{#description}}<a href="#myModal{{id}}" data-toggle="modal">
+            <img src="{{{fileName}}}"></img>
+        </a>
         <div class="carousel-caption">
             <p>
                 {{description}}
             </p>
         </div>
+        {{/description}}
+        {{^description}}
+            <img src="{{{fileName}}}"></img>
+        {{/description}}
     </div>
     {{/images}}
 </div>
@@ -15,6 +21,8 @@
 <a class="carousel-control left" href="#{{carouselName}}" data-slide="prev">&lsaquo;</a>
 <a class="carousel-control right" href="#{{carouselName}}" data-slide="next">&rsaquo;</a>
 {{#images}}
+<!-- Only have modal if there is a desription -->
+{{#description}}
 <!-- Modal -->
 <div id="myModal{{id}}" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
@@ -30,5 +38,6 @@
         By D
     </div>
 </div>
+{{/description}}
 {{/images}}
 
