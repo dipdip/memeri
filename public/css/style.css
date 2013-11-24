@@ -45,6 +45,13 @@ body {
     -webkit-animation: myfirst 5s linear 0s infinite alternate;
 }
 
+/*Back of characterse */
+.charBack {
+	position: relative;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
 @-webkit-keyframes myfirst /* Safari and Chrome */
 {
 0%   {top:0px;}
