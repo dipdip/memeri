@@ -1,6 +1,6 @@
 require(["main"], function(common) {
     require(["navbar", "dataProxy"], function(navbar, dataProxy) {
-        navbar.addNavBar("hello");
+        //navbar.addNavBar("hello");
 
         $("#hello-form").submit(function(e) {
             // Cancel the action

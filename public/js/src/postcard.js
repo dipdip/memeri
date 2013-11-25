@@ -2,7 +2,7 @@ require(["main"], function(common) {
     require(["navbar", "utils", "jquery", "mustache", "bootstrap"], function(navbar, utils, $, Mustache, Bootstrap) {
         var params = utils.getUrlQueryParams();
         // Render navbar
-        navbar.addNavBar("postcard");
+        //navbar.addNavBar("postcard");
         if (!params.rName) {
             params.rName = "Visitor";
             params.sName = "Memeri";

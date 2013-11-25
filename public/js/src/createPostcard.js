@@ -1,7 +1,7 @@
 require(["main"], function(common) {
     require(["navbar", "bootstrap", "jquery", "mustache", "dataProxy"], function(navbar, Bootstrap, $, Mustache, dataProxy) {
         // Render navbar
-        navbar.addNavBar("postcard");
+        //navbar.addNavBar("postcard");
         $(document).ready(function() {
             // Set default postcard img
             $("#selected-postcard").attr("src", 'image/Peekaboo2S.jpg');
