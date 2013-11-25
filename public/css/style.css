@@ -1,7 +1,6 @@
 body {
     padding-top: 60px;
     padding-bottom: 40px;
-    background: transparent;
 }
 #index h2 {
     color: #003299;
@@ -16,6 +15,10 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+
+	background-size:1000px 690px;
+	background-repeat:no-repeat;
+	background-position:center;
 }
 
 .center {
@@ -42,7 +45,7 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     /* Safari and Chrome: */
-    -webkit-animation: myfirst 5s linear 0s infinite alternate;
+    /*-webkit-animation: myfirst 5s linear 0s infinite alternate;*/
 }
 
 /*Back of characterse */
@@ -64,7 +67,7 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     /* Safari and Chrome: */
-    -webkit-animation: myfirst 5s linear 2s infinite alternate;
+    /*-webkit-animation: myfirst 5s linear 2s infinite alternate;*/
 }
 
 @-webkit-keyframes myfirst /* Safari and Chrome */
@@ -79,7 +82,7 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     /* Safari and Chrome: */
-    -webkit-animation: myfirst 5s linear 5s infinite alternate;
+    /*-webkit-animation: myfirst 5s linear 5s infinite alternate;*/
 }
 
 @-webkit-keyframes myfirst /* Safari and Chrome */
@@ -94,7 +97,7 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     /* Safari and Chrome: */
-    -webkit-animation: myfirst 5s linear 3s infinite alternate;
+    /*-webkit-animation: myfirst 5s linear 3s infinite alternate;*/
 }
 
 @-webkit-keyframes myfirst /* Safari and Chrome */
@@ -109,7 +112,7 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     /* Safari and Chrome: */
-    -webkit-animation: myfirst 5s linear 1s infinite alternate;
+    /*-webkit-animation: myfirst 5s linear 1s infinite alternate;*/
 }
 
 @-webkit-keyframes myfirst /* Safari and Chrome */
