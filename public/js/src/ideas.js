@@ -3,6 +3,6 @@ require(["main"], function(common) {
         // Render navbar
         //navbar.addNavBar("ideas");
         
-        return carousel.show(["ideasCarousel1"]);
+        return carousel.show(["ideasCarousel1", "ideasCarousel2"]);
     });
 });

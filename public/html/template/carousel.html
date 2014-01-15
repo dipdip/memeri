@@ -7,7 +7,7 @@
         </a>
         <div class="carousel-caption">
             <p>
-                {{description}}
+                {{{description}}}
             </p>
         </div>
         {{/description}}
@@ -21,15 +21,16 @@
 <a class="carousel-control left" href="#{{carouselName}}" data-slide="prev">&lsaquo;</a>
 <a class="carousel-control right" href="#{{carouselName}}" data-slide="next">&rsaquo;</a>
 {{#images}}
-<!-- Only have modal if there is a desription -->
+<!-- Only have modal if there is a desription and popup is not false-->
 {{#description}}
+{{^popup}}
 <!-- Modal -->
 <div id="myModal{{id}}" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
             ×
         </button>
-        <h3 id="myModalLabel">{{description}}</h3>
+        <h3 id="myModalLabel">{{{description}}}</h3>
     </div>
     <div class="modal-body">
         <img src="{{{fileName}}}"></img>
@@ -38,6 +39,7 @@
         By D
     </div>
 </div>
+{{/popup}}
 {{/description}}
 {{/images}}
 
