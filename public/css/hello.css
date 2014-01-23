@@ -72,3 +72,7 @@ textarea {
     width: 700px;
     height: 600px;
 }
+
+#ideasCarousel2 .carousel-caption{
+        background: rgba(0,0,0,0.5)
+}

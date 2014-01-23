@@ -28,7 +28,7 @@
         {
             "fileName": "../image/LoopComic/s6.jpg",
             "popup": "false",
-            "description": "'We have one more day to find a new home for this puppy, otherwise, we’ll have to put it down,' said the store owner.<br><br>'No! He’s so cute, I want to take care of him,' Lisa protested. Last year, Lisa’s hamster had gotten sick and had to be put down, so she knew what the word meant.<br><br>'Well, I think our family can save this puppy, don’t you ma?' Lisa's Dad smiled.<br><br>'I love this dog, but can we afford him?' Lisa’s Mom asked the store owner.<br><br>'Listen, with a family like yours, I wouldn’t charge a cent. If you’ll have him, he’s all yours! Just promise to take good care of him.'<br><br>'Of course we promise!' Lisa jumped with joy as the family took the puppy home. 'We’ll call him Bobby!'"
+            "description": "'We have one more day to find a new home for this puppy, otherwise, we’ll have to put it down,' said the store owner.  'No! He’s so cute, I want to take care of him,' Lisa protested. Last year, Lisa’s hamster had gotten sick and had to be put down, so she knew what the word meant.  'Well, I think our family can save this puppy, don’t you ma?' Lisa's Dad smiled.  'I love this dog, but can we afford him?' Lisa’s Mom asked the store owner.  'Listen, with a family like yours, I wouldn’t charge a cent. If you’ll have him, he’s all yours! Just promise to take good care of him.' 'Of course we promise!' Lisa jumped with joy as the family took the puppy home. 'We’ll call him Bobby!'"
         },
         {
             "fileName": "../image/LoopComic/s7.jpg",
@@ -47,7 +47,8 @@
         },
         {
             "fileName": "../image/LoopComic/s10.jpg",
-            "popup": "false"
+            "popup": "false",
+            "description": "Daddy quickly put out the fire."
         },
         {
             "fileName": "../image/LoopComic/s11.jpg",
