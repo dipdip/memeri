@@ -1,6 +1,10 @@
 {
     "images": [
         {
+            "fileName": "../image/LoopComic/title.jpg",
+            "popup": "false"
+        },
+        {
             "fileName": "../image/LoopComic/s1.jpg",
             "popup": "false",
             "description": "It was a bright Sunday afternoon and little Lisa went shopping with her mommy and daddy.<br><br>Mommy had promised Lisa that she could get a new doll if she was a good girl, and she had been very very good. In fact, Lisa had been so good that Mrs. Andersen gave her a sticker for being best behaved in class! "
@@ -54,6 +58,10 @@
             "fileName": "../image/LoopComic/s11.jpg",
             "popup": "false",
             "description": "'You did us proud, Bobby! We thought we saved your life, but it turns out you saved ours!' said Lisa, as she hugged him tightly on the neck."
+        },
+        {
+            "fileName": "../image/LoopComic/s12.jpg",
+            "popup": "false"
         }
     ]
 }
