@@ -3,121 +3,109 @@
     <head>
         <title>memeri</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Boundless Art and Ideas">
+        <meta name="description" content="art and ideas">
         <meta name="author" content="memeri team">
 
-        <link rel="stylesheet" href="css/3p/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/3p/bootstrap-responsive.min.css" />
-        <link rel="stylesheet" href="css/style.css"/>
-        <script data-main="js/src/planets" src="js/3p/require.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </head>
 
-    <body id="planets" bgcolor="#000066">
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-                    <a class="brand" href="http://www.memeri.com">memeri</a>
-                    <div class="nav-collapse">
-                        <ul class="nav">
-                            <li class="active">
-                                <a href="planets.html">planets</a>
-                            </li>
-                            <li>
-                                <a href="ideas.html">ideas</a>
-                            </li>
-                            <li>
-                                <a href="hello.html">hello</a>
-                            </li>
-                            <li>
-                                <a href="toast.html">toast</a>
-                            </li>
-                            <li>
-                                <a href="createPostcard.html">postcard</a>
-                            </li>
-                            <li>
-                                <a href="one.html">one</a>
-                            </li>
-                        </ul><!-- /.nav -->
-                    </div><!--/.nav-collapse -->
-                </div><!-- /.container -->
-            </div><!-- /.navbar-inner -->
-        </div>
-        <div class="container">
-            <h3> Collections </h3>
-            <div id="content">
-                <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-                    <li class="active">
-                        <a href="#original" data-toggle="tab">original</a>
-                    </li>
-                    <li>
-                        <a href="#toasted" data-toggle="tab">toasted</a>
-                    </li>
-                    <li>
-                        <a href="#baked" data-toggle="tab">baked</a>
-                    </li>
-                </ul>
+	<body id="index" background="./image/papyrus.jpg">
 
-                <div id="my-tab-content" class="tab-content">
-                    <div class="tab-pane active" id="original">
-                        <div class = "span8">
-                            <div class="well well-small">
-                                <div id="homeCarousel1" class="carousel slide"></div>
-                            </div>
-                        </div>
-                        <div class = "span2">
-                            <div class="well">
-                                The Original Collection of the memeri planets.
+        <div class="container">
+              <br>
+              <br>
+        </div><!-- /.container -->
+
+     	<div class="container-fluid center">
+            <div class="row-fluid text-center center-row">
+            	<a href="index.html"><img src="./image/memeri emblem.png" width="200"></a>
+     		    <br>
+            
+                 <a href="./planets.html"><img class="planet-icon" src="./image/planets.png" onMouseOver="this.src='./image/planets2.png'" onMouseOut="this.src='./image/planets.png'" width="70" style="padding-left:15px;padding-right:15px;"/></a>
+                <a href="./ideas.html"><img class="ideas-icon" src="./image/ideas.png" onMouseOver="this.src='./image/ideas2.png'" onMouseOut="this.src='./image/ideas.png'" width="60" style="padding-left:15px;padding-right:15px;"/></a>
+                <a href="./hello.html"><img class="hello-icon" src="./image/contact.png" onMouseOver="this.src='./image/contact2.png'" onMouseOut="this.src='./image/contact.png'" width="90" style="padding-left:15px;padding-right:15px;"/></a>
+                <a href="./toast.html"><img class="toast-icon" src="./image/toast.png" onMouseOver="this.src='./image/toast2.png'" onMouseOut="this.src='./image/toast.png'" width="65" style="padding-left:15px;padding-right:15px;"/></a>
+                <a href="./postcard.html"><img class="postcard-icon" src="./image/stamp1.png" onMouseOver="this.src='./image/stamp2.png'" onMouseOut="this.src='./image/stamp1.png'" width="75" style="padding-left:15px;padding-right:15px;"/></a>
+                <!--hr class="index-line"-->
+                <br>    
+                <br>            
+                <h3> Collections </h3>
+                <img src="./image/border-top2.png"/>
+                <br>
+                
+                <div id="carousel1" class="carousel slide" data-interval="3000" span="4">
+				<!-- Indicators -->
+					<ol class="carousel-indicators">
+    					<li data-target="#carousel1" data-slide-to="0" class="active"></li>
+    					<li data-target="#carousel1" data-slide-to="1"></li>
+    					<li data-target="#carousel1" data-slide-to="2"></li>
+  					</ol>
+
+  					<!-- Wrapper for slides -->
+  					<div class="carousel-inner">
+    					<div class="item active">
+      						<img src="./image/CharBack/Guardian.png" height="200">
+	      					<div class="carousel-caption">
+   							     test
+						    </div>
+				    	</div>
+                        <div class="item">
+      						The Original Collection of the memeri planets.
                                 <br>
                                 <br>
                                 When we look to space, we marvel at the grandness of the celestial bodies.
                                 <br>
                                 We see that such grandness is part of an even larger meaning.  When all of this is placed for our viewing, are we big or small?
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="toasted">
-                        <div class = "span8">
-                            <div class="well well-small">
-                                <div id="homeCarousel2" class="carousel slide"></div>
-                            </div>
-                        </div>
-                        <div class = "span2">
-                            <div class="well">
-                                The Toasted Collection of the memeri planets.
+	    				</div>	
+                        <div class="item">
+      						The Toasted Collection of the memeri planets.
                                 <br>
                                 <br>
                                 This collection is inspired, hence colored, by happiness, purity, fun and excitement.
                                 <br>
                                 A result of being bold and open to the unknown.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="baked">
-                        <div class = "span8">
-                            <div class="well well-small">
-                                <div id="homeCarousel3" class="carousel slide"></div>
-                            </div>
-                        </div>
-                        <div class = "span2">
-                            <div class="well">
-                                The Baked Collection of the memeri planets.
+	    				</div>	
+ 	   					<div class="item">
+      						<img src="./image/MakiEclipseS.jpg">
+      						<div class="carousel-caption">
+				        		test 2
+      						</div>
+	    				</div>		
+                        <div class="item">
+      						The Baked Collection of the memeri planets.
                                 <br>
                                 <br>
                                 This collection is inspired by spiritual growth.
                                 <br>
                                 It involves re-thinking what is possible and the sense of connection, through space, over long distances.
+	    				</div>			    	
+                        <div class="item">
+      						<img src="./image/jumpingOutS.jpg">
+      						<div class="carousel-caption">
+				        		test 2
+      						</div>
+	    				</div>
+	  				</div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr>
+				<!-- Controls -->
+  				<a class="left carousel-control" href="#carousel1" data-slide="prev">
+    				<span class="glyphicon glyphicon-chevron-left"></span>
+  				</a>
+  				<a class="right carousel-control" href="#carousel1" data-slide="next">
+    				<span class="glyphicon glyphicon-chevron-right"></span>
+  				</a>
+				</div>
+				<br>
+                <img src="./image/border-bottom3.png"/>
+                <br>
+                <br>
+                            
                 <footer>
                     <p>
-                        By <a href="http://memeri.com">memeri team</a>
+                        by <a href="http://memeri.com"><font color="#000066">memeri team &#169; 2014</font></a>
                     </p>
                 </footer>
 

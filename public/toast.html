@@ -3,45 +3,34 @@
     <head>
         <title>memeri</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Boundless Art and Ideas">
+        <meta name="description" content="art and ideas">
         <meta name="author" content="memeri team">
 
-        <link rel="stylesheet" href="css/3p/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/3p/bootstrap-responsive.min.css" />
-        <link rel="stylesheet" href="css/hello.css"/>
-        <script data-main="js/src/toast" src="js/3p/require.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css" />
 
+        <script data-main="js/src/home" src="js/bootstrap.js"></script>
     </head>
-    <body id="toast">
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-                    <a class="brand" href="http://www.memeri.com">memeri</a>
-                    <div class="nav-collapse">
-                        <ul class="nav">
-                            <li>
-                                <a href="planets.html">planets</a>
-                            </li>
-                            <li>
-                                <a href="ideas.html">ideas</a>
-                            </li>
-                            <li>
-                                <a href="hello.html">hello</a>
-                            </li>
-                            <li class="active">
-                                <a href="toast.html">toast</a>
-                            </li>
-                            <li>
-                                <a href="createPostcard.html">postcard</a>
-                            </li>
-                            <li>
-                                <a href="one.html">one</a>
-                            </li>
-                        </ul><!-- /.nav -->
-                    </div><!--/.nav-collapse -->
-                </div><!-- /.container -->
-            </div><!-- /.navbar-inner -->
+    
+    <body id="index" background="./image/papyrus.jpg">
+
+        <div class="container">
+              <br>
+              <br>
+        </div><!-- /.container -->
+
+     	<div class="container-fluid center">
+            <div class="row-fluid text-center center-row">
+            	<a href="index.html"><img src="./image/memeri emblem.png" width="200"></a>
+     		    <br>
+            
+                <a href="./planets.html"><img class="planet-icon" src="./image/planets.png" onMouseOver="this.src='./image/planets2.png'" onMouseOut="this.src='./image/planets.png'" width="70" style="padding-left:15px;padding-right:15px;"/></a>
+                <a href="./ideas.html"><img class="ideas-icon" src="./image/ideas.png" onMouseOver="this.src='./image/ideas2.png'" onMouseOut="this.src='./image/ideas.png'" width="60" style="padding-left:15px;padding-right:15px;"/></a>
+                <a href="./hello.html"><img class="hello-icon" src="./image/contact.png" onMouseOver="this.src='./image/contact2.png'" onMouseOut="this.src='./image/contact.png'" width="90" style="padding-left:15px;padding-right:15px;"/></a>
+                <a href="./toast.html"><img class="toast-icon" src="./image/toast.png" onMouseOver="this.src='./image/toast2.png'" onMouseOut="this.src='./image/toast.png'" width="65" style="padding-left:15px;padding-right:15px;"/></a>
+                <a href="./postcard.html"><img class="postcard-icon" src="./image/stamp1.png" onMouseOver="this.src='./image/stamp2.png'" onMouseOut="this.src='./image/stamp1.png'" width="75" style="padding-left:15px;padding-right:15px;"/></a>
+                <br>
+                <br>
+            </div>
         </div>
         <div class="container">
             <div id="content">
@@ -77,13 +66,15 @@
 
                 </div>
 
-                <hr>
+                <img class="shade-back" src="./image/CharBack/Shade.png" width="128"/>
                 <footer>
                     <p>
-                        By <a href="http://memeri.com">memeri team</a>
+                        By <a href="http://memeri.com"><font color="#000066">memeri team &#169; 2014</font></a>
                     </p>
                 </footer>
             </div>
+            
+            
     </body>
     <script>
         (function(i, s, o, g, r, a, m) {
